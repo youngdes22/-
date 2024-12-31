@@ -1,0 +1,235 @@
+<html>
+    <head><title>明新科技大學資訊管理系</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>        
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                rtl: true
+            });
+        });
+    </script>
+    <style>
+        *{
+            margin:0;
+            color:gray;
+            text-align:center;
+        }
+        .top{
+             background-color: white;
+        }
+        .top .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:10px;
+        }
+        .top .logo{
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .top .logo img{
+            width: 100px;
+            vertical-align: middle;
+        }
+        .top .top-nav{
+            font-size: 25px;
+            font-weight: bold;       
+        }
+        .top .top-nav a{
+            text-decoration: none;
+        }
+        .nav {
+            background-color:#333;
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul {
+            list-style-type: none;  
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color: #333; 
+        }
+        .nav li {
+            float: left; 
+        }
+        .nav li a {    
+            display: block;  
+            color: white;  
+            text-align: center;  
+            padding: 14px 16px;  
+            text-decoration: none;  
+        }
+        .nav li a:hover {
+            background-color: #111; 
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;   
+        }
+        li.dropdown:hover{
+            background-color: #333; 
+        }
+        .dropdown-content {  
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .slider{
+            background-color: black;
+        }
+        .banner{
+            background-image: linear-gradient(#ABDCFF,#0396FF);
+            padding:30px;
+        }
+        .banner h1{
+            padding: 20px;
+        }        
+        .faculty {
+            display: block;
+            justify-content: center;
+            background-color:white;
+            padding:40px;
+        }
+        .faculty h2 {
+            font-size: 25px;
+            color: rgb(50,51,52);
+            padding-bottom:40px;
+        }
+        .faculty .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .faculty .teacher{
+            display:block;
+            text-decoration: none;
+        }
+        .faculty .teacher img{
+            height: 200px;
+            width: 200px;
+        }
+        .faculty .teacher h3{
+                color: White;
+                background-color: rgba(39,40,34,.500);
+                text-align: center;           
+        }
+        .faculty .teacher h2{
+                color: White;
+                background-color: rgb(0, 0 , 0);
+                text-align: center;           
+        }
+        .contact {
+            background-color:white;
+           
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            padding: 60px 500px;
+        }
+        .contact .left{
+            // border: 1px red solid;
+        }
+        .contact .right iframe{
+            height: 300px;
+            width: 300px;
+        }
+        .footer{
+            background-color: black; 
+            color: white;
+            height:60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="top">
+            <div class="container">
+                <div class="logo">
+                  <img src="https://github.com/youngdes22/html-final-exam/blob/main/PP_logo_HP.jpg?raw=true">
+                  Pocketpair
+                </div>
+                <div class="top-nav">
+                  <a href=>明新科大</a>
+                  <a href=>明新管理學院</a>
+                  <a href=>登入</a>
+                </div>
+              </div>
+        </div>
+        <div class="nav">   
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#introduction">系所簡介</a></li>
+                <li  class="dropdown"><a href="#faculty">成員簡介</a>
+                    <div class="dropdown-content">
+                        <a href="#faculty">黃老師</a>
+                        <a href="#faculty">李老師</a>
+                        <a href="#faculty">應老師</a>
+                    </div>                       
+                </li>
+                <li><a href="#about">相關資訊</a></li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li><img src="https://github.com/shhuangmust/html/raw/111-1/slider1.JPG" /></li>
+                    <li><img src="https://github.com/shhuangmust/html/raw/111-1/slider2.JPG" /></li>
+                    <li><img src="https://github.com/shhuangmust/html/raw/111-1/slider3.JPG" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner" id="introduction">
+            <h1>系所簡介</h1>
+            <h1>歷年教育部評鑑皆榮獲一等</h1>
+            <h1>明新科技大學資訊管理系</h1>
+            <h1>全國私立科大第一資管系</h1>
+        </div>
+        <div class="faculty" id="faculty">
+            <h2>師資介紹</h2>
+            <div class="container">
+                <a class="teacher" href="">
+                    <img src="https://github.com/shhuangmust/html/raw/111-1/faculty1.jpg" />
+                    <h3>黃老師</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="https://github.com/shhuangmust/html/raw/111-1/faculty2.jpg" />
+                    <h3>李老師</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="https://github.com/shhuangmust/html/raw/111-1/faculty3.jpg" />
+                    <h3>應老師</h3>
+                </a>        
+            </div>
+        </div>
+        <div class="contact">
+            <div class="left">
+                <h2>Corporate Name</h2><h3> Pocketpair, Inc.</h3>
+                <h2>CEO</h2><h3>Takuro Mizobe</h3>
+                <h2>Description of Business</h2><h3>Game planning, development, and operation</h3>
+                <h2>Founded</h2><h3>April 2015</h3>
+                <h2>Office</h2><h3>Higashigotanda Square Building, 2-10-2 Higashigotanda, Shinagawa-ku, Tokyo 141-0022</h3>
+            </div>
+            <div class="right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6486.042368291647!2d139.72053309677418!3d35.62720426109703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188afbc075dcc3%3A0x553e075e2b0d1549!2z5pel5pys44CSMTQxLTAwMjIg5p2x5Lqs6YO95ZOB5bed5Y2A5p2x5LqU5Y-N55Sw!5e0!3m2!1szh-TW!2stw!4v1735624665563!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>          
+        </div>
+        <div class="footer">
+           &copy;Pocketpair, Inc. 
+        </div>
+     </body>
+</html>
